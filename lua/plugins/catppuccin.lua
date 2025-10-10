@@ -3,13 +3,14 @@ return {
   name = "catppuccin",
   lazy = false, 
   priority = 1000,
-  config = function()
-    require("catppuccin").setup({
+  opts = {
       flavour = "mocha", -- latte, frappe, macchiato, mocha
       background = {
         light = "latte",
         dark = "mocha",}
-    })
+    },
+  config = function()
     vim.cmd.colorscheme("catppuccin")
-  end}
+  end
+  }
 
