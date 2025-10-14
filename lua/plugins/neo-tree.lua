@@ -6,7 +6,15 @@ return {
       "MunifTanjim/nui.nvim",
       "nvim-tree/nvim-web-devicons", -- optional, but recommended
     },
+    opts = {
+  window= {position = "left",
+    mappings = {
+      ["<2-LeftMouse>"] = "open",
+      ["<LeftMouse>"] = "open",
+    }
+  }
+  },
     config = function()
-      vim.keymap.set('n', '<leader>e', ':Neotree filesystem reveal left toggle<CR>', {})
+      vim.keymap.set('n', '<leader>e', ':Neotree filesystem reveal toggle<CR>', {})
     end
 }
