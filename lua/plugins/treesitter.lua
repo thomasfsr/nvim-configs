@@ -7,7 +7,7 @@ return {"nvim-treesitter/nvim-treesitter",
 		config.setup({
 			ensure_installed ={"lua", "python", "javascript", "typescript",
         "zig", "go", "css", "html","vim", "bash", "markdown", "json", 
-        "yaml", "dockerfile"},
+        "yaml", "dockerfile","sql"},
 			highlight = {enable = true},
 			indent = {enable = true}
 		})
