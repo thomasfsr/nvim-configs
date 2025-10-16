@@ -1,5 +1,5 @@
-vim.pack.add({"https://github.com/vague-theme/vague.nvim"})
-vim.cmd("colorscheme vague")
+vim.pack.add({"https://github.com/olimorris/onedarkpro.nvim"})
+vim.cmd("colorscheme onedark")
 
 vim.pack.add({"https://github.com/nvim-mini/mini.comment"})
 require("mini.comment").setup(
