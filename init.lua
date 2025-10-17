@@ -1,5 +1,4 @@
-require("config.options")
+require("config.options") 
 require("config.packs")
--- require("config.lsp")
 require("config.lazy")
 require("config.keymaps")
