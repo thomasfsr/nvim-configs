@@ -1,24 +1,12 @@
 {
   "plugins": {
-    "Comment.nvim": {
-      "rev": "e30b7f2",
-      "src": "https://github.com/numToStr/Comment.nvim"
+    "catppuccin": {
+      "rev": "af58927",
+      "src": "https://github.com/catppuccin/nvim"
     },
     "mini.comment": {
       "rev": "c40bc46",
       "src": "https://github.com/nvim-mini/mini.comment"
-    },
-    "mini.statusline": {
-      "rev": "faa3977",
-      "src": "https://github.com/nvim-mini/mini.statusline"
-    },
-    "onedarkpro.nvim": {
-      "rev": "eeac884",
-      "src": "https://github.com/olimorris/onedarkpro.nvim"
-    },
-    "vague.nvim": {
-      "rev": "cdbfdc8",
-      "src": "https://github.com/vague-theme/vague.nvim"
     }
   }
 }

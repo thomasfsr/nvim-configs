@@ -1,7 +1,9 @@
-vim.pack.add({"https://github.com/olimorris/onedarkpro.nvim"})
-vim.cmd("colorscheme onedark")
+vim.pack.add({
+  {src = "https://github.com/catppuccin/nvim", name = "catppuccin"},
+  {src = "https://github.com/nvim-mini/mini.comment", name = "mini.comment"}
+})
 
-vim.pack.add({"https://github.com/nvim-mini/mini.comment"})
+vim.cmd("colorscheme catppuccin")
 require("mini.comment").setup(
 {
   options = {
