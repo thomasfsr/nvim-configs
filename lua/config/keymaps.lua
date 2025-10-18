@@ -1,5 +1,6 @@
 -- move the cursor to another window
 vim.keymap.set('n', '<c-n>', ':bnext<CR>')
+vim.keymap.set('n', '<c-n>', ':bnext<CR>')
 vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
 vim.keymap.set('n', '<c-j>', ':wincmd j<CR>')
 vim.keymap.set('n', '<c-h>', ':wincmd h<CR>')
