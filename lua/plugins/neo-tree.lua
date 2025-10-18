@@ -18,3 +18,5 @@ return {
       vim.keymap.set('n', '<leader>e', ':Neotree filesystem reveal toggle<CR>', {})
     end
 }
+
+-- Se estiver no neo-tree e quiser ver hidden arquivos e dir é só clicar shift+h
