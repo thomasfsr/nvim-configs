@@ -4,14 +4,12 @@ return {
     lazy = false,
     config = function()
       require("mason").setup()
-    end,
+    end
   },
   {
     "williamboman/mason-lspconfig.nvim",
     lazy = false,
-    opts = {
-      ensure_installed = {"lua_ls"},
-    },
+    opts = {ensure_installed = {"lua_ls"}}
   },
   {
     "neovim/nvim-lspconfig",
