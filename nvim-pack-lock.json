@@ -15,6 +15,10 @@
     "mini.comment": {
       "rev": "c40bc46",
       "src": "https://github.com/nvim-mini/mini.comment"
+    },
+    "mini.surround": {
+      "rev": "444e155",
+      "src": "https://github.com/nvim-mini/mini.surround"
     }
   }
 }
