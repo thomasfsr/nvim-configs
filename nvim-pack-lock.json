@@ -1,24 +1,3 @@
 {
-  "plugins": {
-    "catppuccin": {
-      "rev": "af58927",
-      "src": "https://github.com/catppuccin/nvim"
-    },
-    "lualine": {
-      "rev": "3946f01",
-      "src": "https://github.com/nvim-lualine/lualine.nvim"
-    },
-    "lualine.nvim": {
-      "rev": "3946f01",
-      "src": "https://github.com/nvim-lualine/lualine.nvim"
-    },
-    "mini.comment": {
-      "rev": "c40bc46",
-      "src": "https://github.com/nvim-mini/mini.comment"
-    },
-    "mini.surround": {
-      "rev": "444e155",
-      "src": "https://github.com/nvim-mini/mini.surround"
-    }
-  }
+  "plugins": []
 }
