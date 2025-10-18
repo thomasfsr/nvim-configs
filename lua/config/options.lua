@@ -11,4 +11,4 @@ vim.g.mapleader = " "
 vim.g.background = "light"
 vim.g.maplocalleader = "\\"
 
-
+-- >><< is used to indent. >3 will indent 3 lines.
