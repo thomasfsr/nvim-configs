@@ -14,13 +14,19 @@ return {
   {
     "neovim/nvim-lspconfig",
     config = function()
-		  
-      vim.lsp.config("lua_ls", {})
-      vim.lsp.config("zls", {})
-      vim.lsp.config("basedpyright",{  settings = {
-    python = {
-      analysis = {
-        typeCheckingMode = "basic",}}}})
+		  local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
+      vim.lsp.config("lua_ls", {capabilities=capabilities})
+      vim.lsp.config("zls", {capabilities=capabilities})
+      vim.lsp.config("basedpyright",{ capabilities=capabilities, 
+      settings = {
+        python = {
+          analysis = {
+            typeCheckingMode = "basic",
+          }
+        }
+      }
+    })
 		  vim.lsp.enable({"lua_ls", "basedpyright", "zls"})
 
       vim.diagnostic.config({
