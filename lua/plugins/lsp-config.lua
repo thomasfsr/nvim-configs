@@ -9,18 +9,19 @@ return {
   {
     "williamboman/mason-lspconfig.nvim",
     lazy = false,
-    opts = {ensure_installed = {"lua_ls", "basedpyright"}}
+    opts = {ensure_installed = {"lua_ls", "basedpyright", "zls"}}
   },
   {
     "neovim/nvim-lspconfig",
     config = function()
 		  
       vim.lsp.config("lua_ls", {})
+      vim.lsp.config("zls", {})
       vim.lsp.config("basedpyright",{  settings = {
     python = {
       analysis = {
         typeCheckingMode = "basic",}}}})
-		  vim.lsp.enable({"lua_ls", "basedpyright"})
+		  vim.lsp.enable({"lua_ls", "basedpyright", "zls"})
 
       vim.diagnostic.config({
       virtual_text = true,
