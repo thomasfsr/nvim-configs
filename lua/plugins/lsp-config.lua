@@ -16,7 +16,10 @@ return {
     config = function()
 		  
       vim.lsp.config("lua_ls", {})
-      vim.lsp.config("basedpyright",{})
+      vim.lsp.config("basedpyright",{  settings = {
+    python = {
+      analysis = {
+        typeCheckingMode = "basic",}}}})
 		  vim.lsp.enable({"lua_ls", "basedpyright"})
 
       vim.diagnostic.config({
