@@ -26,9 +26,7 @@ return {
       vim.lsp.config("zls", {capabilities=capabilities})
       vim.lsp.config("basedpyright",{ capabilities=capabilities, settings = {python = {analysis = {typeCheckingMode = "basic"}}}})
       vim.lsp.config("zls", {
-        cmd = {"zls"},
-        filetypes = {"zig","zon"}
-      })
+        cmd = {"zls"}})
 
       vim.lsp.enable({"lua_ls", "basedpyright", "zls"})
 
