@@ -12,7 +12,7 @@ return {
     opts = {ensure_installed = {
       "lua_ls", 
       "basedpyright", 
-      --"gopls"
+      "gopls"
     }}
   },
   {
@@ -22,13 +22,11 @@ return {
       local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
       vim.lsp.config("lua_ls", {capabilities=capabilities})
-      --vim.lsp.config("gopls", {capabilities=capabilities})
-      vim.lsp.config("zls", {capabilities=capabilities})
-      vim.lsp.config("basedpyright",{ capabilities=capabilities, settings = {python = {analysis = {typeCheckingMode = "basic"}}}})
-      vim.lsp.config("zls", {
-        cmd = {"zls"}})
+      vim.lsp.config("gopls", {capabilities=capabilities})
 
-      vim.lsp.enable({"lua_ls", "basedpyright", "zls"})
+      vim.lsp.config("basedpyright",{ capabilities=capabilities, settings = {python = {analysis = {typeCheckingMode = "basic"}}}})
+      vim.lsp.config("zls", {capabilities=capabilities })
+      vim.lsp.enable({"lua_ls", "basedpyright", "zls", "gopls"})
 
       vim.diagnostic.config({
       virtual_text = true,
@@ -38,7 +36,7 @@ return {
       severity_sort = true,
       float = { border = "rounded", source = "always" }
     })
-
+      
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
       vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
