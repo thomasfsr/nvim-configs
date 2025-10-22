@@ -9,7 +9,7 @@ return {
   {
     "williamboman/mason-lspconfig.nvim",
     lazy = false,
-    opts = {ensure_installed = {"lua_ls", "basedpyright", "zls"}}
+    opts = {ensure_installed = {"lua_ls", "basedpyright", "gopls"}}
   },
   {
     "neovim/nvim-lspconfig",
@@ -17,6 +17,7 @@ return {
 		  local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
       vim.lsp.config("lua_ls", {capabilities=capabilities})
+      vim.lsp.config("gopls", {capabilities=capabilities})
       vim.lsp.config("zls", {capabilities=capabilities})
       vim.lsp.config("basedpyright",{ capabilities=capabilities, 
       settings = {
