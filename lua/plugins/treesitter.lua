@@ -1,7 +1,7 @@
 return {"nvim-treesitter/nvim-treesitter", 
   branch = 'master', 
   lazy = false, 
-  build = ":TSUpdate",
+  build = ":TSUpdate && TSBufEnable highlight",
 	config = function () 
     require("nvim-treesitter").setup({
 			ensure_installed ={"lua", "python", "javascript", "typescript",
