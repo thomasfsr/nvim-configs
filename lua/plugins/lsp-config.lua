@@ -9,26 +9,28 @@ return {
   {
     "williamboman/mason-lspconfig.nvim",
     lazy = false,
-    opts = {ensure_installed = {"lua_ls", "basedpyright", "gopls"}}
+    opts = {ensure_installed = {
+      "lua_ls", 
+      "basedpyright", 
+      --"gopls"
+    }}
   },
   {
     "neovim/nvim-lspconfig",
     config = function()
-		  local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
+      local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
       vim.lsp.config("lua_ls", {capabilities=capabilities})
-      vim.lsp.config("gopls", {capabilities=capabilities})
+      --vim.lsp.config("gopls", {capabilities=capabilities})
       vim.lsp.config("zls", {capabilities=capabilities})
-      vim.lsp.config("basedpyright",{ capabilities=capabilities, 
-      settings = {
-        python = {
-          analysis = {
-            typeCheckingMode = "basic",
-          }
-        }
-      }
-    })
-		  vim.lsp.enable({"lua_ls", "basedpyright", "gopls"})
+      vim.lsp.config("basedpyright",{ capabilities=capabilities, settings = {python = {analysis = {typeCheckingMode = "basic"}}}})
+      vim.lsp.config("zls", {
+        cmd = {"zls"},
+        filetypes = {"zig","zon"}
+      })
+
+      vim.lsp.enable({"lua_ls", "basedpyright", "zls"})
 
       vim.diagnostic.config({
       virtual_text = true,
