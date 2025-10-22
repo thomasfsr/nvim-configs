@@ -28,7 +28,7 @@ return {
         }
       }
     })
-		  vim.lsp.enable({"lua_ls", "basedpyright", "zls"})
+		  vim.lsp.enable({"lua_ls", "basedpyright", "gopls"})
 
       vim.diagnostic.config({
       virtual_text = true,
