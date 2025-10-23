@@ -7,6 +7,6 @@ vim.keymap.set('n', '<c-h>', ':wincmd h<CR>')
 vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
 
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
-vim.keymap.set('n', '<leader>k', ':quit<CR>')
-vim.keymap.set('n', '<leader>1', ':quit<CR>')
+vim.keymap.set('n', '<leader>k', ':quit!<CR>')
+vim.keymap.set('n', '<leader>q', ':quit<CR>')
 vim.keymap.set('n', '<leader>w', ':write<CR>')
