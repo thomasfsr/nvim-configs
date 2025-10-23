@@ -23,11 +23,3 @@ vim.api.nvim_create_autocmd("LspAttach", {
     end
   end,
 })
-
-vim.pack.add({{src = "https://github.com/nvim-treesitter/nvim-treesitter", name="treesitter", {
-			ensure_installed ={"lua", "python", "javascript", "typescript",
-        "zig", "go", "css", "html","vim", "bash", "markdown", "json", 
-        "yaml", "dockerfile","sql"},
-			highlight = {enable = true},
-			indent = {enable = true}
-		}}})
