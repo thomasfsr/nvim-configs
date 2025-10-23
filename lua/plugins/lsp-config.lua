@@ -11,7 +11,7 @@ return {
     lazy = false,
     opts = {ensure_installed = {
       "lua_ls", 
-      "basedpyright", 
+      "pyright", 
       "gopls"
     }}
   },
@@ -24,9 +24,9 @@ return {
       vim.lsp.config("lua_ls", {capabilities=capabilities})
       vim.lsp.config("gopls", {capabilities=capabilities})
 
-      vim.lsp.config("basedpyright",{ capabilities=capabilities, settings = {python = {analysis = {typeCheckingMode = "basic"}}}})
-      vim.lsp.config("zls", {capabilities=capabilities })
-      vim.lsp.enable({"lua_ls", "basedpyright", "zls", "gopls"})
+      vim.lsp.config("pyright",{ capabilities=capabilities})
+      vim.lsp.config("zls", {capabilities=capabilities})
+      vim.lsp.enable({"lua_ls", "pyright", "zls", "gopls"})
 
       vim.diagnostic.config({
       virtual_text = true,
