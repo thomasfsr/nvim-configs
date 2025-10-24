@@ -13,6 +13,7 @@ vim.g.maplocalleader = "\\"
 
 vim.o.hlsearch = true
 vim.o.incsearch = true
+vim.o.cursorline = true
 -- >><< is used to indent. >3 will indent 3 lines.
 
 vim.api.nvim_create_autocmd("LspAttach", {
