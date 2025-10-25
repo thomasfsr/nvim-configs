@@ -47,12 +47,22 @@
 --   end
 -- }
 
+-- return {
+--   "rose-pine/neovim",
+--   lazy = false,
+--   priority = 1000,
+--   opts = {},
+--   config = function ()
+--     vim.cmd.colorscheme "rose-pine"
+--   end
+-- }
 return {
-  "rose-pine/neovim",
+  "loctvl842/monokai-pro.nvim",
   lazy = false,
   priority = 1000,
   opts = {},
   config = function ()
-    vim.cmd.colorscheme "rose-pine"
+    require("monokai-pro")
+    vim.cmd.colorscheme "monokai-pro"
   end
 }
