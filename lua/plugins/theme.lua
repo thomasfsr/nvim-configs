@@ -61,8 +61,10 @@ return {
   lazy = false,
   priority = 1000,
   opts = {},
-  config = function ()
-    require("monokai-pro")
+  config = function (c)
+    require("monokai-pro").setup({
+      filter = "classic",
+    })
     vim.cmd.colorscheme "monokai-pro"
   end
 }
