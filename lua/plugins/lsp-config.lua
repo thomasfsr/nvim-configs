@@ -15,7 +15,6 @@ return {
       "gopls",
       -- formatters:
       "stylua",
-      "black"
     }}
   },
   {
