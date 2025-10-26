@@ -26,12 +26,12 @@ return {
       vim.lsp.config("lua_ls", {capabilities=capabilities})
       vim.lsp.config("gopls", {capabilities=capabilities})
 
-      vim.lsp.config("pyright",{ capabilities=capabilities})
+      vim.lsp.config("pyright",{ capabilities=capabilities, settings = {python={analysis={ typeCheckingMode="off" }}}})
       vim.lsp.config("zls", {capabilities=capabilities})
       vim.lsp.enable({"lua_ls", "pyright", "zls", "gopls"})
 
       vim.diagnostic.config({
-      virtual_text = false, -- Default is true
+      virtual_text = true, -- Default is true
       signs = true,
       underline = true,
       update_in_insert = false,
