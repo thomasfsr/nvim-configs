@@ -14,6 +14,8 @@ vim.g.maplocalleader = "\\"
 vim.o.hlsearch = true
 vim.o.incsearch = true
 vim.o.cursorline = true
+vim.o.ignorecase = true
+vim.o.smartcase = true
 vim.o.cursorlineopt = "number"
 -- >><< is used to indent. >3 will indent 3 lines.
 
