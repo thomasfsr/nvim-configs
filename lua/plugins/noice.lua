@@ -3,7 +3,7 @@ return {
   -- enabled = false,
   event = "VeryLazy",
   opts = {
-    
+
   },
   dependencies = {
     "MunifTanjim/nui.nvim",

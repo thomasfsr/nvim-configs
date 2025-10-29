@@ -1,0 +1,2 @@
+hit letter "a" instead of i to insert forward.
+Hit letter "o" to insert in the line below (it also create a new line).
