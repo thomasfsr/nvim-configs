@@ -34,9 +34,10 @@
 --   priority = 1000,
 --   opts = {},
 --   config = function ()
---     vim.cmd.colorscheme "catppuccin-mocha"
+--     vim.cmd.colorscheme "catppuccin-frappe"
 --   end
 -- }
+--
 -- return {
 --   "binhtran432k/dracula.nvim",
 --   lazy = false,
@@ -56,15 +57,27 @@
 --     vim.cmd.colorscheme "rose-pine"
 --   end
 -- }
+-- return {
+--   "loctvl842/monokai-pro.nvim",
+--   lazy = false,
+--   priority = 1000,
+--   opts = {},
+--   config = function()
+--     require("monokai-pro").setup({
+--       filter = "pro",
+--       })
+--     vim.cmd.colorscheme("monokai-pro")
+--   end
+-- }
 return {
-  "loctvl842/monokai-pro.nvim",
+  "navarasu/onedark.nvim",
   lazy = false,
   priority = 1000,
-  opts = {},
-  config = function()
-    require("monokai-pro").setup({
-      filter = "pro",
-      })
-    vim.cmd.colorscheme("monokai-pro")
+  config = function ()
+    require("onedark").setup({
+      style = 'deep'
+    })
+    require("onedark").load()
+    -- vim.cmd.colorscheme("onedark_vivid")
   end
 }

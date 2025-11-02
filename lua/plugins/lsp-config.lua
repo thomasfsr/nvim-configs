@@ -26,7 +26,16 @@ return {
       vim.lsp.config("lua_ls", {capabilities=capabilities})
       vim.lsp.config("gopls", {capabilities=capabilities})
 
-      vim.lsp.config("pyright",{ capabilities=capabilities, settings = {python={analysis={ typeCheckingMode="off" }}}})
+      vim.lsp.config("pyright",{ 
+        capabilities=capabilities, 
+        settings = {
+          python={
+            analysis={
+              typeCheckingMode="off" 
+            }
+          }
+        }
+      })
       vim.lsp.config("zls", {capabilities=capabilities})
       vim.lsp.enable({"lua_ls", "pyright", "zls", "gopls"})
 
