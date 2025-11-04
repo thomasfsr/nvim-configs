@@ -75,7 +75,7 @@ return {
   priority = 1000,
   config = function ()
     require("onedark").setup({
-      style = 'deep'
+      style = 'cool'
     })
     require("onedark").load()
     -- vim.cmd.colorscheme("onedark_vivid")
