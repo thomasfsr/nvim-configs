@@ -32,9 +32,13 @@ return {
   "binhtran432k/dracula.nvim",
   lazy = false,
   priority = 1000,
-  opts = {},
   config = function ()
-    vim.cmd.colorscheme "dracula"
+    require("dracula").setup({
+      -- comments = { italic = true },
+      -- keywords = { italic = true },
+    })
+    vim.g.dracula_full_special_attrs_support = true
+    vim.cmd.colorscheme "dracula" 
   end
 }
 

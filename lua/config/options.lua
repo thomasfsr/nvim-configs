@@ -1,3 +1,4 @@
+vim.opt.conceallevel = 2
 vim.o.mouse = 'a'
 vim.opt.termguicolors = true
 vim.o.number = true
@@ -9,8 +10,8 @@ vim.o.expandtab = true
 vim.o.winborder = "rounded"
 vim.opt.wrap = false
 vim.g.mapleader = " "
-vim.g.background = "light"
 vim.g.maplocalleader = "\\"
+vim.opt.clipboard = "unnamedplus"
 
 vim.o.hlsearch = true
 vim.o.incsearch = true
