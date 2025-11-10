@@ -72,6 +72,9 @@
 return {
   "morhetz/gruvbox",
   config = function()
+    vim.g.gruvbox_italic = 1
+    vim.g.gruvbox_italicize_comments = 1
+    vim.g.gruvbox_italicize_strings = 1  -- set to 1 if you want italic strings
     vim.cmd.colorscheme "gruvbox"
   end
 }
