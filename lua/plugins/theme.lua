@@ -1,14 +1,4 @@
 -- return {
---   'AlexvZyl/nordic.nvim',
---   lazy = false,
---   priority = 1000,
---   opts = {},
---   config = function ()
---     vim.cmd.colorscheme "nordic"
---   end
--- }
-
--- return {
 --   'neanias/everforest-nvim',
 --   lazy = false,
 --   priority = 1000,
@@ -38,15 +28,15 @@
 --   end
 -- }
 --
--- return {
---   "binhtran432k/dracula.nvim",
---   lazy = false,
---   priority = 1000,
---   opts = {},
---   config = function ()
---     vim.cmd.colorscheme "dracula"
---   end
--- }
+return {
+  "binhtran432k/dracula.nvim",
+  lazy = false,
+  priority = 1000,
+  opts = {},
+  config = function ()
+    vim.cmd.colorscheme "dracula"
+  end
+}
 
 -- return {
 --   "rose-pine/neovim",
@@ -69,13 +59,13 @@
 --     vim.cmd.colorscheme("monokai-pro")
 --   end
 -- }
-return {
-  "morhetz/gruvbox",
-  config = function()
-    vim.g.gruvbox_italic = 1
-    vim.g.gruvbox_italicize_comments = 1
-    vim.g.gruvbox_italicize_strings = 1  -- set to 1 if you want italic strings
-    vim.g.gruvbox_contrast_dark = "hard"
-    vim.cmd.colorscheme "gruvbox"
-  end
-}
+-- return {
+--   "morhetz/gruvbox",
+--   config = function()
+--     vim.g.gruvbox_italic = 1
+--     vim.g.gruvbox_italicize_comments = 1
+--     vim.g.gruvbox_italicize_strings = 1  -- set to 1 if you want italic strings
+--     vim.g.gruvbox_contrast_dark = "hard"
+--     vim.cmd.colorscheme "gruvbox"
+--   end
+-- }
