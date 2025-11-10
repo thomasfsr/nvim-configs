@@ -75,6 +75,7 @@ return {
     vim.g.gruvbox_italic = 1
     vim.g.gruvbox_italicize_comments = 1
     vim.g.gruvbox_italicize_strings = 1  -- set to 1 if you want italic strings
+    vim.g.gruvbox_contrast_dark = "hard"
     vim.cmd.colorscheme "gruvbox"
   end
 }
