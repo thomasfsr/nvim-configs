@@ -70,9 +70,8 @@
 --   end
 -- }
 return {
-  "ellisonleao/gruvbox.nvim",
+  "morhetz/gruvbox",
   config = function()
-    require("gruvbox").setup()
     vim.cmd.colorscheme "gruvbox"
   end
 }
