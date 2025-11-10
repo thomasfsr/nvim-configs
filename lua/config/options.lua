@@ -1,4 +1,5 @@
 vim.o.mouse = 'a'
+vim.opt.termguicolors = true
 vim.o.number = true
 vim.opt.swapfile = false
 vim.wo.number = true

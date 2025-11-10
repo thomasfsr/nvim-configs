@@ -69,23 +69,10 @@
 --     vim.cmd.colorscheme("monokai-pro")
 --   end
 -- }
--- return {
---   "navarasu/onedark.nvim",
---   lazy = false,
---   priority = 1000,
---   config = function ()
---     require("onedark").setup({
---       style = 'warmer'
---     })
---     require("onedark").load()
---     -- vim.cmd.colorscheme("onedark_vivid")
---   end
--- }
 return {
-  "morhetz/gruvbox",
-  lazy = false,
-  priority = 1000,
-  config = function ()
-    vim.cmd.colorscheme("gruvbox")
+  "ellisonleao/gruvbox.nvim",
+  config = function()
+    require("gruvbox").setup()
+    vim.cmd.colorscheme "gruvbox"
   end
 }
