@@ -18,15 +18,15 @@
 --   end
 -- }
 
-return {
-  "catppuccin/nvim",
-  lazy = false,
-  priority = 1000,
-  opts = {},
-  config = function ()
-    vim.cmd.colorscheme "catppuccin-frappe"
-  end
-}
+-- return {
+--   "catppuccin/nvim",
+--   lazy = false,
+--   priority = 1000,
+--   opts = {},
+--   config = function ()
+--     vim.cmd.colorscheme "catppuccin-frappe"
+--   end
+-- }
 --
 -- return {
 --   "binhtran432k/dracula.nvim",
@@ -37,7 +37,6 @@ return {
 --       -- comments = { italic = true },
 --       -- keywords = { italic = true },
 --     })
---     vim.g.dracula_full_special_attrs_support = true
 --     vim.cmd.colorscheme "dracula" 
 --   end
 -- }
@@ -51,18 +50,18 @@ return {
 --     vim.cmd.colorscheme "rose-pine"
 --   end
 -- }
--- return {
---   "loctvl842/monokai-pro.nvim",
---   lazy = false,
---   priority = 1000,
---   opts = {},
---   config = function()
---     require("monokai-pro").setup({
---       filter = "pro",
---       })
---     vim.cmd.colorscheme("monokai-pro")
---   end
--- }
+return {
+  "loctvl842/monokai-pro.nvim",
+  lazy = false,
+  priority = 1000,
+  opts = {},
+  config = function()
+    require("monokai-pro").setup({
+      filter = "pro",
+      })
+    vim.cmd.colorscheme("monokai-pro")
+  end
+}
 -- return {
 --   "morhetz/gruvbox",
 --   config = function()

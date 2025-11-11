@@ -1,4 +1,3 @@
-vim.opt.conceallevel = 2
 vim.o.mouse = 'a'
 vim.opt.termguicolors = true
 vim.o.number = true
