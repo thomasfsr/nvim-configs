@@ -57,7 +57,7 @@ return {
   opts = {},
   config = function()
     require("monokai-pro").setup({
-      filter = "pro",
+      filter = "machine",
       })
     vim.cmd.colorscheme("monokai-pro")
   end
