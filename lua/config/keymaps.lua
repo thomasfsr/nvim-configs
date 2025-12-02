@@ -1,6 +1,6 @@
 -- move the cursor to another window
 vim.keymap.set('n', '<c-x>', ':bd<CR>') -- close current buffer
-vim.keymap.set('n', '<c-i>', ':bp<CR>') -- close current buffer
+vim.keymap.set('n', '<c-i>', ':bp<CR>')
 vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
 vim.keymap.set('n', '<c-j>', ':wincmd j<CR>')
 vim.keymap.set('n', '<c-h>', ':wincmd h<CR>')
