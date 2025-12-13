@@ -13,8 +13,10 @@ return {
       "lua_ls", 
       "pyright", 
       "gopls",
-      -- formatters:
-      "stylua",
+      "ts_ls",
+      "html",
+      "cssls",
+      "jsonls",
     }}
   },
   {
@@ -37,7 +39,16 @@ return {
         }
       })
       vim.lsp.config("zls", {capabilities=capabilities})
-      vim.lsp.enable({"lua_ls", "pyright", "zls", "gopls"})
+      vim.lsp.enable({
+        "lua_ls", 
+        "pyright", 
+        "zls", 
+        "gopls",  
+        "ts_ls",
+        "html",
+        "cssls",
+        "jsonls",
+})
 
       vim.diagnostic.config({
       virtual_text = true, -- Default is true

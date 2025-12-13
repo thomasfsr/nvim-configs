@@ -17,14 +17,32 @@
 --     vim.cmd.colorscheme "tokyonight"
 --   end
 -- }
-
+--
+return {
+  "Mofiqul/vscode.nvim",
+  config = function()
+    require('vscode').setup({
+      -- Enable transparent background
+      transparent = false,
+      
+      -- Enable italic comment
+      italic_comments = true,
+      
+      -- Disable nvim-tree background color
+      disable_nvimtree_bg = true,
+    })
+    
+    -- Load the color scheme
+    require('vscode').load()
+  end
+}
 -- return {
 --   "catppuccin/nvim",
 --   lazy = false,
 --   priority = 1000,
 --   opts = {},
 --   config = function ()
---     vim.cmd.colorscheme "catppuccin-frappe"
+--     vim.cmd.colorscheme "catppuccin-mocha"
 --   end
 -- }
 --
@@ -50,18 +68,18 @@
 --     vim.cmd.colorscheme "rose-pine"
 --   end
 -- }
-return {
-  "loctvl842/monokai-pro.nvim",
-  lazy = false,
-  priority = 1000,
-  opts = {},
-  config = function()
-    require("monokai-pro").setup({
-      filter = "machine",
-      })
-    vim.cmd.colorscheme("monokai-pro")
-  end
-}
+-- return {
+--   "loctvl842/monokai-pro.nvim",
+--   lazy = false,
+--   priority = 1000,
+--   opts = {},
+--   config = function()
+--     require("monokai-pro").setup({
+--       filter = "machine",
+--       })
+--     vim.cmd.colorscheme("monokai-pro")
+--   end
+-- }
 -- return {
 --   "morhetz/gruvbox",
 --   config = function()
