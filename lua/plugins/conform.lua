@@ -13,6 +13,7 @@ return {
 				json = { "prettier" },
 				lua = { "stylua" },
 				python = { "black" },
+				zig = { "zigfmt" },
 			},
 			format_on_save = {
 				timeout_ms = 1000,

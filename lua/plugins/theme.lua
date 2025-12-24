@@ -9,41 +9,41 @@
 -- }
 
 -- return {
---   "folke/tokyonight.nvim",
---   lazy = false,
---   priority = 1000,
---   opts = {},
---   config = function ()
---     vim.cmd.colorscheme "tokyonight"
---   end
+-- 	"folke/tokyonight.nvim",
+-- 	lazy = false,
+-- 	priority = 1000,
+-- 	opts = { transparent = true },
+-- 	config = function()
+-- 		vim.cmd.colorscheme("tokyonight-storm")
+-- 	end,
 -- }
 --
 return {
-  "Mofiqul/vscode.nvim",
-  config = function()
-    require('vscode').setup({
-      -- Enable transparent background
-      transparent = false,
-      
-      -- Enable italic comment
-      italic_comments = true,
-      
-      -- Disable nvim-tree background color
-      disable_nvimtree_bg = true,
-    })
-    
-    -- Load the color scheme
-    require('vscode').load()
-  end
+	"Mofiqul/vscode.nvim",
+	config = function()
+		require("vscode").setup({
+			-- Enable transparent background
+			-- transparent = true,
+
+			-- Enable italic comment
+			italic_comments = true,
+
+			-- Disable nvim-tree background color
+			disable_nvimtree_bg = true,
+		})
+
+		-- Load the color scheme
+		require("vscode").load()
+	end,
 }
 -- return {
---   "catppuccin/nvim",
---   lazy = false,
---   priority = 1000,
---   opts = {},
---   config = function ()
---     vim.cmd.colorscheme "catppuccin-mocha"
---   end
+-- 	"catppuccin/nvim",
+-- 	lazy = false,
+-- 	priority = 1000,
+-- 	opts = { transparent_background = true },
+-- 	config = function()
+-- 		vim.cmd.colorscheme("catppuccin-frappe")
+-- 	end,
 -- }
 --
 -- return {
@@ -55,7 +55,7 @@ return {
 --       -- comments = { italic = true },
 --       -- keywords = { italic = true },
 --     })
---     vim.cmd.colorscheme "dracula" 
+--     vim.cmd.colorscheme "dracula"
 --   end
 -- }
 
