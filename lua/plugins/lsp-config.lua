@@ -12,7 +12,7 @@ return {
 		opts = {
 			ensure_installed = {
 				"lua_ls",
-				"stylua",
+				-- "stylua",
 				"pyright",
 				"gopls",
 				"ts_ls",
@@ -43,6 +43,7 @@ return {
 				},
 			})
 			vim.lsp.config("zls", { capabilities = capabilities })
+			vim.lsp.config("clangd", { capabilities = capabilities })
 			vim.lsp.enable({
 				"lua_ls",
 				"pyright",
@@ -52,6 +53,7 @@ return {
 				"html",
 				"cssls",
 				"jsonls",
+				"clangd",
 			})
 
 			vim.diagnostic.config({
