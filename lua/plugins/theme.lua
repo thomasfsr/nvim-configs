@@ -23,7 +23,7 @@ return {
 	config = function()
 		require("vscode").setup({
 			-- Enable transparent background
-			-- transparent = true,
+			transparent = true,
 
 			-- Enable italic comment
 			italic_comments = true,
