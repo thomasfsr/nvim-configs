@@ -11,6 +11,7 @@ return {
 				"python",
 				"javascript",
 				"typescript",
+				"prisma",
 				"zig",
 				"go",
 				"css",
