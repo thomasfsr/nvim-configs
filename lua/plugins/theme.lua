@@ -18,24 +18,24 @@
 -- 	end,
 -- }
 --
-return {
-	"Mofiqul/vscode.nvim",
-	config = function()
-		require("vscode").setup({
-			-- Enable transparent background
-			transparent = true,
-
-			-- Enable italic comment
-			italic_comments = true,
-
-			-- Disable nvim-tree background color
-			disable_nvimtree_bg = true,
-		})
-
-		-- Load the color scheme
-		require("vscode").load()
-	end,
-}
+-- return {
+-- 	"Mofiqul/vscode.nvim",
+-- 	config = function()
+-- 		require("vscode").setup({
+-- 			-- Enable transparent background
+-- 			transparent = true,
+--
+-- 			-- Enable italic comment
+-- 			italic_comments = true,
+--
+-- 			-- Disable nvim-tree background color
+-- 			disable_nvimtree_bg = true,
+-- 		})
+--
+-- 		-- Load the color scheme
+-- 		require("vscode").load()
+-- 	end,
+-- }
 
 -- return {
 -- 	"catppuccin/nvim",
@@ -52,18 +52,31 @@ return {
 -- }
 --
 -- return {
---   "binhtran432k/dracula.nvim",
---   lazy = false,
---   priority = 1000,
---   config = function ()
---     require("dracula").setup({
---       -- comments = { italic = true },
---       -- keywords = { italic = true },
---     })
---     vim.cmd.colorscheme "dracula"
---   end
+-- 	"binhtran432k/dracula.nvim",
+-- 	lazy = false,
+-- 	priority = 1000,
+-- 	config = function()
+-- 		require("dracula").setup({
+-- 			-- comments = { italic = true },
+-- 			-- keywords = { italic = true },
+-- 			transparent = true,
+-- 		})
+-- 		vim.cmd.colorscheme("dracula")
+-- 	end,
 -- }
+return {
+	"projekt0n/github-nvim-theme",
+	name = "github-theme",
+	lazy = false, -- make sure we load this during startup if it is your main colorscheme
+	priority = 1000, -- make sure to load this before all the other start plugins
+	config = function()
+		require("github-theme").setup({
+			-- transparent = true,
+		})
 
+		vim.cmd("colorscheme github_dark_default")
+	end,
+}
 -- return {
 --   "rose-pine/neovim",
 --   lazy = false,
