@@ -14,6 +14,7 @@ return {
 				lua = { "stylua" },
 				python = { "black" },
 				zig = { "zigfmt" },
+				c = { "clang_format" },
 			},
 			format_on_save = {
 				timeout_ms = 1000,
