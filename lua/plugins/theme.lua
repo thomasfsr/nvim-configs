@@ -1,25 +1,30 @@
--- return {
---   'neanias/everforest-nvim',
---   lazy = false,
---   priority = 1000,
---   opts = {},
---   config = function ()
---     vim.cmd.colorscheme "everforest"
---   end
--- }
 return {
-	"metalelf0/black-metal-theme-neovim",
+	"neanias/everforest-nvim",
 	lazy = false,
 	priority = 1000,
+	opts = {},
 	config = function()
-		require("black-metal").setup({
-			theme = "windir",
-			transparent = true,
+		require("everforest").setup({
+			background = "hard",
+			-- transparent_background_level = 2,
 		})
-		require("black-metal").load()
-		-- vim.o.background = "light"
+		vim.cmd.colorscheme("everforest")
 	end,
 }
+-- return {
+-- 	"metalelf0/black-metal-theme-neovim",
+-- 	lazy = false,
+-- 	priority = 1000,
+-- 	config = function()
+-- 		require("black-metal").setup({
+-- 			theme = "windir",
+-- 			-- transparent = true,
+-- 			variant = true,
+-- 		})
+-- 		require("black-metal").load()
+-- 		-- vim.o.background = "light"
+-- 	end,
+-- }
 -- return {
 -- 	"folke/tokyonight.nvim",
 -- 	lazy = false,
