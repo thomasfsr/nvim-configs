@@ -1,16 +1,18 @@
-return {
-	"neanias/everforest-nvim",
-	lazy = false,
-	priority = 1000,
-	opts = {},
-	config = function()
-		require("everforest").setup({
-			background = "hard",
-			-- transparent_background_level = 1,
-		})
-		vim.cmd.colorscheme("everforest")
-	end,
-}
+-- return {
+-- 	"neanias/everforest-nvim",
+-- 	lazy = false,
+-- 	priority = 1000,
+-- 	opts = {},
+-- 	config = function()
+-- 		require("everforest").setup({
+-- 			-- background = "hard",
+-- 			background = "medium",
+-- 			-- background = "soft",
+-- 			-- transparent_background_level = 1,
+-- 		})
+-- 		vim.cmd.colorscheme("everforest")
+-- 	end,
+-- }
 -- return {
 -- 	"metalelf0/black-metal-theme-neovim",
 -- 	lazy = false,
@@ -64,10 +66,11 @@ return {
 -- 			transparent_background = true,
 -- 		})
 --
--- 		vim.cmd.colorscheme("catppuccin-mocha")
+-- 		-- vim.cmd.colorscheme("catppuccin-macchiato")
+-- 		vim.cmd.colorscheme("catppuccin-latte")
 -- 	end,
 -- }
---
+
 -- return {
 -- 	"binhtran432k/dracula.nvim",
 -- 	lazy = false,
@@ -76,7 +79,7 @@ return {
 -- 		require("dracula").setup({
 -- 			-- comments = { italic = true },
 -- 			-- keywords = { italic = true },
--- 			transparent = true,
+-- 			-- transparent = true,
 -- 		})
 -- 		vim.cmd.colorscheme("dracula")
 -- 	end,
@@ -107,24 +110,24 @@ return {
 --   end
 -- }
 -- return {
---   "loctvl842/monokai-pro.nvim",
---   lazy = false,
---   priority = 1000,
---   opts = {},
---   config = function()
---     require("monokai-pro").setup({
---       filter = "machine",
---       })
---     vim.cmd.colorscheme("monokai-pro")
---   end
+-- 	"loctvl842/monokai-pro.nvim",
+-- 	lazy = false,
+-- 	priority = 1000,
+-- 	opts = {},
+-- 	config = function()
+-- 		require("monokai-pro").setup({
+-- 			-- filter = "machine",
+-- 		})
+-- 		vim.cmd.colorscheme("monokai-pro")
+-- 	end,
 -- }
--- return {
---   "morhetz/gruvbox",
---   config = function()
---     vim.g.gruvbox_italic = 1
---     vim.g.gruvbox_italicize_comments = 1
---     vim.g.gruvbox_italicize_strings = 1  -- set to 1 if you want italic strings
---     vim.g.gruvbox_contrast_dark = "hard"
---     vim.cmd.colorscheme "gruvbox"
---   end
--- }
+return {
+	"morhetz/gruvbox",
+	config = function()
+		vim.g.gruvbox_italic = 1
+		vim.g.gruvbox_italicize_comments = 1
+		vim.g.gruvbox_italicize_strings = 1 -- set to 1 if you want italic strings
+		vim.g.gruvbox_contrast_dark = "hard"
+		vim.cmd.colorscheme("gruvbox")
+	end,
+}

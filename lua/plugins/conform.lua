@@ -4,10 +4,10 @@ return {
 	config = function()
 		require("conform").setup({
 			formatters_by_ft = {
-				javascript = { "eslint_d", "prettier" },
-				javascriptreact = { "eslint_d", "prettier" },
-				typescript = { "eslint_d", "prettier" },
-				typescriptreact = { "eslint_d", "prettier" },
+				javascript = { "prettier" },
+				javascriptreact = { "prettier" },
+				typescript = { "prettier" },
+				typescriptreact = { "prettier" },
 				html = { "prettier" },
 				css = { "prettier" },
 				json = { "prettier" },
