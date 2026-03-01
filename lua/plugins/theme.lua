@@ -1,3 +1,14 @@
+return {
+	"morhetz/gruvbox",
+	config = function()
+		vim.g.gruvbox_italic = 1
+		vim.g.gruvbox_italicize_comments = 1
+		vim.g.gruvbox_italicize_strings = 1 -- set to 1 if you want italic strings
+		vim.g.gruvbox_contrast_dark = "hard"
+		-- vim.g.gruvbox_transparent_bg = 1
+		vim.cmd.colorscheme("gruvbox")
+	end,
+}
 -- return {
 -- 	"neanias/everforest-nvim",
 -- 	lazy = false,
@@ -121,13 +132,3 @@
 -- 		vim.cmd.colorscheme("monokai-pro")
 -- 	end,
 -- }
-return {
-	"morhetz/gruvbox",
-	config = function()
-		vim.g.gruvbox_italic = 1
-		vim.g.gruvbox_italicize_comments = 1
-		vim.g.gruvbox_italicize_strings = 1 -- set to 1 if you want italic strings
-		vim.g.gruvbox_contrast_dark = "hard"
-		vim.cmd.colorscheme("gruvbox")
-	end,
-}
