@@ -1,14 +1,14 @@
-return {
-	"morhetz/gruvbox",
-	config = function()
-		vim.g.gruvbox_italic = 1
-		vim.g.gruvbox_italicize_comments = 1
-		vim.g.gruvbox_italicize_strings = 1 -- set to 1 if you want italic strings
-		vim.g.gruvbox_contrast_dark = "hard"
-		-- vim.g.gruvbox_transparent_bg = 1
-		vim.cmd.colorscheme("gruvbox")
-	end,
-}
+-- return {
+-- 	"morhetz/gruvbox",
+-- 	config = function()
+-- 		vim.g.gruvbox_italic = 1
+-- 		vim.g.gruvbox_italicize_comments = 1
+-- 		vim.g.gruvbox_italicize_strings = 1 -- set to 1 if you want italic strings
+-- 		vim.g.gruvbox_contrast_dark = "hard"
+-- 		-- vim.g.gruvbox_transparent_bg = 1
+-- 		vim.cmd.colorscheme("gruvbox")
+-- 	end,
+-- }
 -- return {
 -- 	"neanias/everforest-nvim",
 -- 	lazy = false,
@@ -53,7 +53,7 @@ return {
 -- 	config = function()
 -- 		require("vscode").setup({
 -- 			-- Enable transparent background
--- 			transparent = true,
+-- 			-- transparent = true,
 --
 -- 			-- Enable italic comment
 -- 			italic_comments = true,
@@ -67,20 +67,20 @@ return {
 -- 	end,
 -- }
 
--- return {
--- 	"catppuccin/nvim",
--- 	name = "catppuccin",
--- 	lazy = false,
--- 	priority = 1000,
--- 	config = function()
--- 		require("catppuccin").setup({
--- 			transparent_background = true,
--- 		})
---
--- 		-- vim.cmd.colorscheme("catppuccin-macchiato")
--- 		vim.cmd.colorscheme("catppuccin-latte")
--- 	end,
--- }
+return {
+	"catppuccin/nvim",
+	name = "catppuccin",
+	lazy = false,
+	priority = 1000,
+	config = function()
+		require("catppuccin").setup({
+			-- transparent_background = true,
+		})
+
+		-- vim.cmd.colorscheme("catppuccin-macchiato")
+		vim.cmd.colorscheme("catppuccin-mocha")
+	end,
+}
 
 -- return {
 -- 	"binhtran432k/dracula.nvim",
