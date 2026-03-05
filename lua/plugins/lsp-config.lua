@@ -12,13 +12,14 @@ return {
 		opts = {
 			ensure_installed = {
 				"lua_ls",
-				-- "stylua",
+				"stylua",
 				"pyright",
 				"gopls",
 				"ts_ls",
 				"html",
 				"cssls",
 				"jsonls",
+				"bashls",
 				-- There is also many other lint, formatters and lsp installed
 				-- that for some reason do not work in ensure_install. See all in Mason command.
 			},
