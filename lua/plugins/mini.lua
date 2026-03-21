@@ -22,7 +22,6 @@ return {
 			require("mini.tabline").setup({
 				show_icons = true,
 			})
-
 			require("mini.surround").setup({
 				mappings = {
 					add = "Sa",
@@ -34,10 +33,9 @@ return {
 					update_n_lines = "",
 				},
 			})
-
 			-- statusline
-			require("mini.statusline").setup({})
-			vim.cmd.colorscheme("unokai")
+			-- require("mini.statusline").setup({})
+			-- vim.cmd.colorscheme("minisummer")
 		end,
 	},
 }

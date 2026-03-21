@@ -53,6 +53,8 @@ vim.o.smartcase = true
 -- vim.o.cursorlineopt = "number"
 -- >><< is used to indent. >3 will indent 3 lines.
 
+-- vim.cmd.colorscheme("unokai")
+
 vim.api.nvim_create_autocmd("LspAttach", {
 	callback = function(args)
 		local client = vim.lsp.get_client_by_id(args.data.client_id)
