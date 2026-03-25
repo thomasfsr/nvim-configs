@@ -34,7 +34,7 @@ return {
 				},
 			})
 			-- statusline
-			-- require("mini.statusline").setup({})
+			require("mini.statusline").setup({})
 			-- vim.cmd.colorscheme("minisummer")
 		end,
 	},
