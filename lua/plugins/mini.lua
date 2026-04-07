@@ -18,7 +18,7 @@ return {
 			require("mini.trailspace").setup({})
 			-- require("mini.bufremove").setup({})
 			require("mini.notify").setup({})
-			require("mini.icons").setup({})
+			-- require("mini.icons").setup({})
 			-- require("mini.tabline").setup({
 			-- 	show_icons = true,
 			-- })
