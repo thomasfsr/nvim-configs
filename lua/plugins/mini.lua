@@ -16,12 +16,12 @@ return {
 			})
 			require("mini.pairs").setup({})
 			require("mini.trailspace").setup({})
-			require("mini.bufremove").setup({})
+			-- require("mini.bufremove").setup({})
 			require("mini.notify").setup({})
 			require("mini.icons").setup({})
-			require("mini.tabline").setup({
-				show_icons = true,
-			})
+			-- require("mini.tabline").setup({
+			-- 	show_icons = true,
+			-- })
 			require("mini.surround").setup({
 				mappings = {
 					add = "Sa",
