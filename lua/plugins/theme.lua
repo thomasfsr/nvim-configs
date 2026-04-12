@@ -12,12 +12,15 @@
 -- 	end,
 -- }
 return {
-	"folke/tokyonight.nvim",
-	lazy = false,
-	priority = 1000,
-	opts = {},
-	config = function()
-		--color styles: night, storm, moon and day
-		vim.cmd.colorscheme("tokyonight-night")
-	end,
+	{
+		"folke/tokyonight.nvim",
+		lazy = false,
+		priority = 1000,
+		opts = {},
+		config = function()
+			--color styles: night, storm, moon and day
+			vim.cmd.colorscheme("tokyonight-night")
+		end,
+	},
+	{ "Mofiqul/dracula.nvim" },
 }
