@@ -12,7 +12,6 @@ return {
 		opts = {
 			ensure_installed = {
 				"lua_ls",
-				"stylua",
 				"pyright",
 				"gopls",
 				"ts_ls",
@@ -23,6 +22,28 @@ return {
 				-- There is also many other lint, formatters and lsp installed
 				-- that for some reason do not work in ensure_install. See all in Mason command.
 			},
+		},
+	},
+	{
+		"WhoIsSethDaniel/mason-tool-installer.nvim",
+		lazy = false,
+		dependencies = {
+			"williamboman/mason.nvim",
+		},
+		opts = {
+			ensure_installed = {
+				"prettier",
+				"stylua",
+				"eslint_d",
+				"black",
+				"isort",
+				"shfmt",
+				"shellcheck",
+			},
+			auto_update = false,
+			run_on_start = true,
+			-- start_delay = 3000,
+			debounce_hours = 5,
 		},
 	},
 	{
@@ -55,6 +76,7 @@ return {
 				"cssls",
 				"jsonls",
 				"clangd",
+				"cssls",
 			})
 
 			vim.diagnostic.config({
