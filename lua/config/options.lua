@@ -25,8 +25,9 @@ vim.opt.completeopt = "menuone,noinsert,noselect" -- completion options
 vim.opt.showmode = false -- do not show the mode, instead have it in statusline
 vim.opt.synmaxcol = 300 -- syntax highlighting limit
 vim.opt.updatetime = 300 -- faster completion
+vim.opt.ttimeout = true
 vim.opt.timeoutlen = 500 -- timeout duration
-vim.opt.ttimeoutlen = 0 -- key code timeout
+vim.opt.ttimeoutlen = 50 -- key code timeout
 vim.opt.autoread = true -- auto-reload changes if outside of neovim
 vim.opt.backspace = "indent,eol,start" -- better backspace behaviour
 vim.opt.iskeyword:append("-") -- include - in words
