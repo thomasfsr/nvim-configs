@@ -15,6 +15,7 @@ return {
 				python = { "black" },
 				zig = { "zigfmt" },
 				c = { "clang_format" },
+				blade = { "blade-formatter" },
 			},
 			format_on_save = {
 				timeout_ms = 1000,

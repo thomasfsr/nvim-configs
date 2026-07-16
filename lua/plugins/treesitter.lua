@@ -47,7 +47,7 @@ return {
 					return not ts_ok
 				end,
 			},
-			indent = { enable = false },
+			indent = { enable = true },
 		})
 	end,
 }
