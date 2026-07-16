@@ -19,6 +19,9 @@ return {
 				"cssls",
 				"jsonls",
 				"bashls",
+				"intelephense",
+				"vue_ls",
+				"laravel_ls",
 				-- There is also many other lint, formatters and lsp installed
 				-- that for some reason do not work in ensure_install. See all in Mason command.
 			},
