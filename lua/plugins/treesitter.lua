@@ -18,7 +18,6 @@ return {
 				"prisma",
 				"zig",
 				"go",
-				"css",
 				"scss",
 				"html",
 				"vim",
@@ -26,7 +25,6 @@ return {
 				"markdown",
 				"markdown_inline",
 				"json",
-				"yaml",
 				"dockerfile",
 				"sql",
 				"yaml",
@@ -35,9 +33,12 @@ return {
 				"blade",
 				"vue",
 				"regex",
+				"gitignore",
+				"query",
+				"vimdoc",
+				"toml",
+				"xml",
 			},
-			highlight = { enable = true },
-			indent = { enable = true },
 		})
 		-- vim.api.nvim_create_autocmd("FileType", {
 		-- 	callback = function(args)
