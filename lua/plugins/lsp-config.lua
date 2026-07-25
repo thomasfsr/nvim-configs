@@ -95,7 +95,9 @@ return {
 			vim.keymap.set("n", "<leader>d", function()
 				vim.diagnostic.open_float(nil, { border = "rounded" })
 			end, { desc = "Show diagnostics under cursor" })
-			vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
+			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
+			vim.keymap.set("n", "gD", vim.lsp.buf.declaration, {})
+			vim.keymap.set("n", "gi", vim.lsp.buf.implementation, {})
 			vim.keymap.set("n", "<leader><Enter>", vim.lsp.buf.references, {})
 			vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
 		end,
