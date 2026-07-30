@@ -8,6 +8,12 @@ return {
 			require("mini.move").setup({})
 			require("mini.cursorword").setup({})
 			require("mini.pick").setup({})
+			local pick = require("mini.pick").builtin
+
+			vim.keymap.set("n", "<leader>ff", pick.files, { desc = "Find Files" })
+			vim.keymap.set("n", "<leader>fg", pick.grep_live, { desc = "Live Grep" })
+			vim.keymap.set("n", "<leader>fb", pick.buffers, { desc = "Buffers" })
+			vim.keymap.set("n", "<leader>fh", pick.help, { desc = "Help" })
 			require("mini.indentscope").setup({
 
 				draw = {
