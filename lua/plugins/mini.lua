@@ -7,7 +7,9 @@ return {
 			require("mini.comment").setup({})
 			require("mini.move").setup({})
 			require("mini.cursorword").setup({})
+			require("mini.pick").setup({})
 			require("mini.indentscope").setup({
+
 				draw = {
 					delay = 0,
 					animation = require("mini.indentscope").gen_animation.none(),
