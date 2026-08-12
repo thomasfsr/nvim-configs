@@ -41,5 +41,11 @@ return {
 			"toml",
 			"xml",
 		})
+		vim.api.nvim_create_autocmd("FileType", {
+			pattern = "blade",
+			callback = function()
+				vim.treesitter.start()
+			end,
+		})
 	end,
 }
